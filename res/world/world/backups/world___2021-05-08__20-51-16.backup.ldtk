@@ -2944,13 +2944,13 @@
 						},
 						{
 							"__identifier": "Hero",
-							"__grid": [16,15],
+							"__grid": [4,14],
 							"__pivot": [0,0],
 							"__tile": null,
 							"width": 16,
 							"height": 16,
 							"defUid": 58,
-							"px": [256,240],
+							"px": [64,224],
 							"fieldInstances": [{ "__identifier": "initialDir", "__value": 1, "__type": "Int", "defUid": 245, "realEditorValues": [] }]
 						}
 					]

@@ -196,7 +196,7 @@ class Game extends Process {
 		Called when LDtk world changes on the disk, if hot-reloading is enabled in Boot.hx
 	**/
 	public function onLDtkReload() {
-		world.parseJson( hxd.Res.world.world.entry.getText() );
+		world.parseJson( hxd.Res.world.world_ldtk.entry.getText() );
 		startLevel(curLevelIdx);
 	}	
 

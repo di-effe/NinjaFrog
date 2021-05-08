@@ -1,6 +1,7 @@
 // import ui.Window;
 import Data;
 import hxd.Key;
+import dn.heaps.slib.*;
 
 class Main extends dn.Process {
 	public static var ME : Main;
@@ -31,29 +32,6 @@ class Main extends dn.Process {
         hxd.Res.initEmbed();
         #end
 
-        // CastleDB hot reloading
-		#if debug
-        hxd.res.Resource.LIVE_UPDATE = true;
-        hxd.Res.data.watch(function() {
-            delayer.cancelById("cdb");
-
-            delayer.addS("cdb", function() {
-            	Data.load( hxd.Res.data.entry.getBytes().toString() );
-            	if( Game.ME!=null )
-                    Game.ME.onCdbReload();
-            }, 0.2);
-        });
-
-        // Hot reloading (LDtk)
-        hxd.Res.world.world.watch(function() {
-            delayer.cancelById("ldtk");
-
-            delayer.addS("ldtk", function() {
-            	if( Game.ME!=null )
-                    Game.ME.onLDtkReload();
-            }, 0.2);
-        });
-		#end
 
 		// Assets & data init
 		hxd.snd.Manager.get(); // force sound manager init on startup instead of first sound play
