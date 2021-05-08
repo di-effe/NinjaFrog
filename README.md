@@ -13,15 +13,15 @@ Pixel Adventure's demo is more fun than my game, but I saw this grow from a sing
 
 - LDtk 0.9.3
 - 4.2.1+bf9ff69 
-castle: [git 1.6.1 ]
-deepnightLibs: [git 1.0.59]
-format: [3.5.0]
-heaps: [git 1.9.1]
-hldx: [1.10.0]
-hlopenal: [1.5.0]
-hlsdl: [1.10.0]
-ldtk-haxe-api: [git 0.9.3-rc.1]
-redistHelper: [0.4.10]
+- castle: [git 1.6.1 ]
+- deepnightLibs: [git 1.0.59]
+- format: [3.5.0]
+- heaps: [git 1.9.1]
+- hldx: [1.10.0]
+- hlopenal: [1.5.0]
+- hlsdl: [1.10.0]
+- ldtk-haxe-api: [git 0.9.3-rc.1]
+- redistHelper: [0.4.10]
 
 # Credits
 
