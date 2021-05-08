@@ -75,8 +75,6 @@ class Level extends dn.Process {
 						setMarks(cx,cy, [PlatformEnd,PlatformEndLeft]);
 				}
 			}
-
-
 	}
 
 
@@ -192,10 +190,10 @@ class Level extends dn.Process {
 		// return !isValid(cx,cy) ? true : level.l_Collisions.getInt(cx,cy)==0;
 		return !isValid(cx,cy)
 		? true
-		: level.l_Collisions.getInt(cx,cy)==0 || // Terrain_Green
-		level.l_Collisions.getInt(cx,cy)==1 || // Bricks_Grey
-		level.l_Collisions.getInt(cx,cy)==3 || // Platform_Brown
-		level.l_Collisions.getInt(cx,cy)==7 || // Rocks_Brown
+		: level.l_Collisions.getInt(cx,cy)==1 || // Terrain_Green
+		level.l_Collisions.getInt(cx,cy)==2|| // Bricks_Grey
+		level.l_Collisions.getInt(cx,cy)==4 || // Platform_Brown
+		level.l_Collisions.getInt(cx,cy)==8 || // Rocks_Brown
 		extraCollMap.exists(coordId(cx,cy)); // Collision with other entities
 	}
 
@@ -211,21 +209,19 @@ class Level extends dn.Process {
 	function render() {
 		root.removeChildren();
 
-
-		// Render Backgrounds
+		// Render Backgrounds	
 		var tg_background = new h2d.TileGroup(BackgroundTilesetSource, root);
-		level.l_Background.renderInTileGroup(tg_background, false);		
-				
-		// Render shadows
+		level.l_Background.render(tg_background);	
+		
+
+
+		// Render shadows	
 		var tg_shadows = new h2d.TileGroup(ShadowsTilesetSource, root);
-		level.l_Shadows.renderInTileGroup(tg_shadows, false);		
+		level.l_Shadows.render(tg_shadows);					
 
 		// Render collisions
 		var tg_collisions = new h2d.TileGroup(CollisionTilesetSource, root);
-		level.l_Collisions.renderInTileGroup(tg_collisions, false);
-
-
-		
+		level.l_Collisions.render(tg_collisions);
 	}
 
 	override function postUpdate() {
@@ -233,7 +229,6 @@ class Level extends dn.Process {
 		if( invalidated ) {
 			invalidated = false;
 			render();
-
 		}
 	}
 }
