@@ -1,3 +1,6 @@
+> **Legacy branch:** the original 2021 version of NinjaFrog (Haxe 4.2.1, Heaps 1.9.1, LDtk 0.9.3), kept as it was.
+> The current version, updated for Haxe 4.3 / HashLink 1.16 / LDtk 1.5, is on the [`main`](https://github.com/di-effe/NinjaFrog) branch.
+
 # About
 
 NinjaFrog is my first real game and has been mainly a learning exercise, to better understand Heaps, Haxe, LDtk and Deepnight's gamebase code and libraries.
