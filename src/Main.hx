@@ -7,10 +7,10 @@ class Main extends dn.Process {
 	public static var ME : Main;
 
 	/** Used to create "Access" instances that allow controller checks (keyboard or gamepad) **/
-	public var controller : dn.heaps.Controller;
+	public var controller : dn.legacy.Controller;
 
 	/** Controller Access created for Main & Boot **/
-	public var ca : dn.heaps.Controller.ControllerAccess;
+	public var ca : dn.legacy.Controller.ControllerAccess;
 
 	public function new(s:h2d.Scene) {
 		super();
@@ -41,7 +41,7 @@ class Main extends dn.Process {
 		Data.load( hxd.Res.data.entry.getText() );
 
 		// Game controller & default key bindings
-		controller = new dn.heaps.Controller(s);
+		controller = new dn.legacy.Controller(s);
 		ca = controller.createAccess("main");
 		controller.bind(AXIS_LEFT_X_NEG, Key.LEFT, Key.Q, Key.A);
 		controller.bind(AXIS_LEFT_X_POS, Key.RIGHT, Key.D);

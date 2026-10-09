@@ -1,7 +1,7 @@
 package en;
 
 class Hero extends Entity {
-	var ca : dn.heaps.Controller.ControllerAccess;
+	var ca : dn.legacy.Controller.ControllerAccess;
 	var jumpCount: Int;
 
 	public function new(e:Entity_Hero) {

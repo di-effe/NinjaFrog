@@ -11,7 +11,7 @@ class Intro extends dn.Process {
 	var texts : h2d.Flow;
 
 	/** Game controller (pad or keyboard) **/
-	public var ca : dn.heaps.Controller.ControllerAccess;
+	public var ca : dn.legacy.Controller.ControllerAccess;
 
 	public function new(isEnding:Bool) {
 		super(Main.ME);

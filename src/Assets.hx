@@ -1,7 +1,7 @@
 import dn.heaps.slib.*;
 
 class Assets {
-	public static var SLIB = dn.heaps.assets.SfxDirectory.load("sfx");
+	public static var SLIB = dn.heaps.assets.SfxDirectory.load("sfx", false);
 	public static var ldtkTilesets : Map<String,h2d.Tile>;
 
 	public static var fontPixel : h2d.Font;

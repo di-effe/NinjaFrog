@@ -223,7 +223,7 @@ class Entity {
 	public function sightCheck(e:Entity) {
 		if( destroyed || e.destroyed )
 			return false;
-		return dn.Bresenham.checkThinLine(cx,cy,e.cx,e.cy, canSeeThrough);
+		return dn.geom.Bresenham.checkThinLine(cx,cy,e.cx,e.cy, canSeeThrough);
 	}
 
 	public inline function distPx(e:Entity) return M.dist(footX, footY, e.footX, e.footY);
