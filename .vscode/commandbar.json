@@ -49,7 +49,7 @@
 		{
 			"text": "📦 Redist",
 			"color": "lightgreen",
-			"command": "haxelib run redistHelper hl.dx.hxml hl.sdl.hxml js.hxml swf.hxml -o redist.$ -P MyGame",
+			"command": "haxelib run redistHelper build.directx.hxml build.opengl.hxml build.js.hxml swf.hxml -o redist.$ -P MyGame",
 			"alignment": "right",
 			"skipTerminateQuickPick": false,
 			"priority": -50

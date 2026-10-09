@@ -6,7 +6,7 @@
         {
             "label": "HL debug",
             "type": "hxml",
-            "file": "hl.debug.hxml",
+            "file": "build.dev.hxml",
             "presentation": {
                 "reveal": "never",
                 "panel": "dedicated",
@@ -22,7 +22,7 @@
         {
             "label": "HL release",
             "type": "hxml",
-            "file": "hl.dx.hxml",
+            "file": "build.opengl.hxml",
             "presentation": {
                 "reveal": "never",
                 "panel": "dedicated",
@@ -34,7 +34,7 @@
         {
             "label": "JS release",
             "type": "hxml",
-            "file": "js.hxml",
+            "file": "build.js.hxml",
             "presentation": {
                 "reveal": "never",
                 "panel": "dedicated",

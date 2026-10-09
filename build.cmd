@@ -1,3 +1,3 @@
 @echo off
-haxelib run redistHelper js.hxml hl.sdl.hxml hl.dx.hxml
+haxelib run redistHelper build.js.hxml build.opengl.hxml build.directx.hxml
 pause
