@@ -7,6 +7,8 @@ This is a small puzzle game, heavely inspired (something more than ispired I adm
 His demo levels are so nice, complete and full of ideas, that I couldn't resist the urge to try to replicate on my own at least of fraction of them.
 Pixel Adventure's demo is more fun than my game, but I saw this grow from a single sprite to what you can see now, and I'm proud of it :)
 
+**Play it on itch.io:** https://dieffe.itch.io/ninja-frog
+
 
 # Building
 
